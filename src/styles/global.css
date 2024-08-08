@@ -24,16 +24,16 @@
         @apply p-2 rounded-full border-2 border-primary hover:border-background hover:bg-primary hover:text-background transition-all;
     }
     h1 {
-        @apply text-5xl font-bold mb-1 text-primary;
+        @apply text-4xl font-bold mb-1 text-primary;
     }
     p {
-        @apply mb-4 font-light text-tertiary tracking-wide;
+        @apply mb-4 font-light text-tertiary tracking-wide leading-relaxed;
     }
     p a {
         @apply text-primary font-semibold hover:text-secondary transition-all;
     }
     p img {
-        @apply h-40 mx-auto;
+        @apply h-64 mx-auto;
     }
 }
 
