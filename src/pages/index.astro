@@ -1,0 +1,14 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import Logo from "../content/images/OX_IG_Logo.png";
+---
+
+<Layout>
+    <img
+        src={Logo.src}
+        alt="Oxen Free"
+        class="max-h-96"
+        transition:name="logo"
+    />
+</Layout>

@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply bg-background font-jakarta text-secondary text-center;
+    }
+    body {
+        @apply flex items-center justify-center max-w-[90%] h-screen mx-auto;
+    }
+    header {
+        @apply absolute w-fit mx-auto left-0 right-0 bottom-20;
+    }
+    section {
+        @apply pb-12;
+    }
+    ul {
+        @apply flex gap-3 font-bold text-sm uppercase;
+    }
+    li {
+        @apply p-2 rounded-full bg-primary hover:bg-hover hover:text-primary transition-all;
+    }
+    h1 {
+        @apply text-5xl font-bold mb-1 text-primary;
+    }
+    p {
+        @apply mb-4 font-light text-tertiary tracking-wide;
+    }
+    p a {
+        @apply text-primary font-semibold hover:text-secondary transition-all;
+    }
+    p img {
+        @apply h-36 mx-auto;
+    }
+}
+
+@layer components {
+    [astro-icon] {
+        @apply h-7;
+    }
+}

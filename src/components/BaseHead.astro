@@ -1,0 +1,25 @@
+---
+import "../styles/global.css";
+// import { GoogleAnalytics } from "astro-google-analytics";
+
+const { title, description = "OXEN FREE" } = Astro.props;
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+{description && <meta name="description" content={description} />}
+<!-- Favicon -->
+<link rel="icon" type="image/ico" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+{description && <meta property="og:description" content={description} />}
+<!-- Twitter -->
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:title" content={title} />
+{description && <meta property="twitter:description" content={description} />}
