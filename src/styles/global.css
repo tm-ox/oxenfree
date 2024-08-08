@@ -30,7 +30,7 @@
         @apply mb-4 font-light text-tertiary tracking-wide leading-relaxed;
     }
     p a {
-        @apply text-primary font-semibold hover:text-secondary transition-all;
+        @apply text-primary font-semibold hover:underline underline-offset-4 transition-all;
     }
     p img {
         @apply h-64 mx-auto;
