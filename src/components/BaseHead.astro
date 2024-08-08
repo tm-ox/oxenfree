@@ -13,13 +13,14 @@ const { title, description = "OXEN FREE" } = Astro.props;
 <meta name="title" content={title} />
 {description && <meta name="description" content={description} />}
 <!-- Favicon -->
-<link rel="icon" type="image/ico" href="/favicon.ico" />
+<link rel="icon" type="image/png" href="/favicon.png" />
+<!-- Open Graph / Facebook
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-<!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content={title} />
 {description && <meta property="og:description" content={description} />}
-<!-- Twitter -->
+<!-- Twitter
 <meta property="twitter:card" content="summary" />
 <meta property="twitter:title" content={title} />
 {description && <meta property="twitter:description" content={description} />}
+-->

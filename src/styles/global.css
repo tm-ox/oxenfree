@@ -6,22 +6,22 @@
 
 @layer base {
     html {
-        @apply bg-background font-jakarta text-secondary text-center;
+        @apply bg-background font-jakarta text-primary text-center;
     }
     body {
         @apply flex items-center justify-center max-w-[90%] h-screen mx-auto;
     }
     header {
-        @apply absolute w-fit mx-auto left-0 right-0 bottom-20;
+        @apply absolute w-fit mx-auto left-0 right-0 bottom-10 sm:bottom-20;
     }
     section {
-        @apply pb-12;
+        @apply pb-16;
     }
     ul {
         @apply flex gap-3 font-bold text-sm uppercase;
     }
     li {
-        @apply p-2 rounded-full bg-primary hover:bg-hover hover:text-primary transition-all;
+        @apply p-2 rounded-full border-2 border-primary hover:border-background hover:bg-primary hover:text-background transition-all;
     }
     h1 {
         @apply text-5xl font-bold mb-1 text-primary;
@@ -33,7 +33,7 @@
         @apply text-primary font-semibold hover:text-secondary transition-all;
     }
     p img {
-        @apply h-36 mx-auto;
+        @apply h-40 mx-auto;
     }
 }
 
