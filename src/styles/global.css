@@ -12,7 +12,7 @@
         @apply flex items-center justify-center max-w-[90%] h-screen mx-auto;
     }
     header {
-        @apply absolute w-fit mx-auto left-0 right-0 bottom-10 sm:bottom-20 mt-6;
+        @apply fixed w-fit mx-auto left-0 right-0 bottom-10 sm:bottom-20;
     }
     section {
         @apply pb-16;
