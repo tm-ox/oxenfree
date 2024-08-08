@@ -21,7 +21,7 @@
         @apply flex gap-3 font-bold text-sm uppercase;
     }
     li {
-        @apply p-2 rounded-full border-2 border-primary hover:border-background hover:bg-primary hover:text-background transition-all;
+        @apply p-2 rounded-full bg-background border-2 border-primary hover:border-background hover:bg-primary hover:text-background transition-all;
     }
     h1 {
         @apply text-4xl font-bold mb-1 text-primary;
